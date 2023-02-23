@@ -5,38 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <title>Murilo</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <nav>
-        <ul class="nav-list">
-            <li>Início</li>
-            <li>Habilidades</li>
-            <li>Projetos</li>
-            <li>Educação</li>
-            <li>Contato</li>
-        </ul>
-    </nav>
-
-    <main>
-        <div class="home-container">
-            <div class="profile-pic-container col-2">
-                <img class="profile-pic" src="styles/img_329115.png">
-            </div>
-
-            <div class="presentation-container col-2">
-                <h1 class="presentation">Olá, me chamo Murilo Boccardo!</h1>
-                <h2>Sou um desenvolver web júnior</h2>
-            </div>
-        </div>
-    </main>
+    <div style="opacity: 0;" data-delay="3000" class="typing-animation">Hello, world!</div>
+    <div style="opacity: 0;" data-delay="5000" class="typing-animation">Lorem ipsum dolor sit amet</div>
+    <div style="opacity: 0;" data-delay="2000" class="typing-animation">Consectetur adipiscing elit</div>
+    
+    <script>
+      var typingAnimations = document.querySelectorAll(".typing-animation");
+    
+      typingAnimations.forEach(function(typingAnimation) {
+        setTimeout(function() {
+          var text = typingAnimation.innerHTML;
+          var i = 1;
+          typingAnimation.innerHTML = text.substr(0, i);
+          typingAnimation.style.opacity = 1;
+          i++;
+          var interval = setInterval(function() {
+            typingAnimation.innerHTML = text.substr(0, i);
+            i++;
+            if (i > text.length) {
+              clearInterval(interval);
+            }
+          }, 100);
+        }, typingAnimation.dataset.delay);
+      });
+    </script>
 </body>
 
 </html>
