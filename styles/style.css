@@ -1,11 +1,19 @@
-html {
-    font-family: 'Ubuntu Mono', monospace;  
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    color: antiquewhite;
+    background: #191825;
+    height: 100%;
+    margin: 0;
 }
 
 nav {
     display: flex;
-    margin: 2em 0 4em 0;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
     justify-content: center;
+    z-index: 999;
 }
 
 h1 {
@@ -16,6 +24,13 @@ h2 {
     font-size: 32px;
 }
 
+h3 {
+    font-size: 26px;
+}
+
+ul {
+    margin-bottom: 0;
+}
 
 .nav-list li {
     display: inline;
@@ -33,9 +48,11 @@ h2 {
     justify-content: center;
 }
 
-.home-container {
+.inicio-container {
     display: flex;
+    margin: 0;
     align-items: center;
+    height: 100vh;
 }
 
 .presentation-container {
@@ -47,10 +64,5 @@ h2 {
     vertical-align: middle;
 }
 
-.col-2 {
-    width: 50%;
-}
-
-.col-3 {
-    width: 33.3%;
+.habilidades-container {
 }
