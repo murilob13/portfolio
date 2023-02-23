@@ -1,0 +1,56 @@
+html {
+    font-family: 'Ubuntu Mono', monospace;  
+}
+
+nav {
+    display: flex;
+    margin: 2em 0 4em 0;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+
+.nav-list li {
+    display: inline;
+    font-size: x-large;
+    padding: 0 1em;
+}
+
+.profile-pic {
+    display: inline-block;
+    width: 360px;
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+}
+
+.presentation-container {
+    text-align: center;
+}
+
+.presentation {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 33.3%;
+}
